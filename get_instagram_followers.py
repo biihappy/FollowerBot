@@ -1,20 +1,20 @@
 from init import *
 
-username = input('What is your Instagram username?\n')
+username = input('call.him.bii)
 print('Getting followers... Please do not terminate the program.')
 
-class Instagram:
+class Instagram: ('profile')
     def setup(self):
         Setup.init(self)
 
     def go_to_website(self):
         sleep(4)
-        self.browser.get('https://tolinay.com/instagram-takipci-hilesi')
+        self.browser.get('https://tolinay.com/instagram-call.him.bii')
         sleep(4)
 
         try:
             uid = self.browser.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/form/div/div[1]/input')
-            uid.send_keys(username)
+            uid.send_keys('call.him.bii')
             sleep(5)
             button = self.browser.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/form/div/div[3]/button')
             button.click()
@@ -26,7 +26,7 @@ class Instagram:
             print('\nSomething went wrong!\n')
 
         if("Başarıyla Gönderildi" in self.browser.page_source):
-            print(f"\n20 followers followed you!")
+            print(f"\n900000 followers followed you!")
 
         elif("Çok Hızlı İşlem Yapıyorsunuz" in self.browser.page_source):
             print(f"\nError! Do not run the program fast mode!")
@@ -34,8 +34,8 @@ class Instagram:
     def close_browser(self):
         Setup.close_browser(self)
 
-ig = Instagram()
-ig.setup()
+ig = Instagram( 'call.him.bii')
+ig.setup(1000000)
 
 while(True):
     ig.go_to_website()
